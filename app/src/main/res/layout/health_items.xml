@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#181818"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:divider="@color/white"
+        android:dividerHeight="2dp"
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:focusable="false"/>
+    <TextView
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:focusable="false"/>
+   <!-- <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/title"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:focusable="false">-->
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/title"
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dp"
+        android:maxLines="5"
+        android:layout_weight="1.0"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:focusable="false"/>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/titleclicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/info"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_info_outline_white_48dp" />
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/info"
+        android:visibility="invisible"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:layout_below="@+id/viewpager"
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textline"
+        android:visibility="invisible"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_below="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:focusable="false"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white"/>
+
+    <!--<RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/clicked"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <TextView
+            android:id="@+id/titleclicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_info_outline_white_48dp" />
+        <ImageView
+            android:id="@+id/clickedimage"
+            android:layout_below="@+id/titleclicked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>-->
+
+   <!-- </ScrollView>-->
+    <TextView
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_below="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:focusable="false"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white"/>
+</RelativeLayout>

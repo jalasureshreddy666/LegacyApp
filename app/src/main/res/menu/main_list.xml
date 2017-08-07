@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#242424">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:textColor="@color/white"
+            android:id="@+id/paper_towels"
+            android:title="Paper Towels" />
+
+        <item
+            android:textColor="@color/white"
+            android:id="@+id/dry_towels"
+            android:title="Dry Towels" />
+
+        <item
+            android:textColor="@color/white"
+            android:id="@+id/wet_wipes"
+            android:title="Wet Wipes" />
+
+        <item
+            android:textColor="@color/white"
+            android:id="@+id/tablettop"
+            android:title="Tabletop &amp; Guest Towels" />
+
+        <item
+            android:textColor="@color/white"
+            android:id="@+id/privatelabel"
+            android:title="Private Label Programs" />
+
+    </group>
+
+     <!--   <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="3 Security Dr.Suite 301 \n Cranbury" />
+            &lt;!&ndash;<item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy" />&ndash;&gt;
+        </menu>-->
+
+   <!-- <group
+
+        android:checkableBehavior="single">-->
+
+    <item
+        android:textColor="@color/white"
+        android:id="@+id/address"
+        android:title="@string/address" />
+   <!-- </group>-->
+
+</menu>

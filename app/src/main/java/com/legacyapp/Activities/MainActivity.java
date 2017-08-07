@@ -1,4 +1,4 @@
-package com.example.legacyapp.Activities;
+package com.legacyapp.Activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -19,8 +19,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
-import com.example.legacyapp.Adapters.MyPagerAdapter;
-import com.example.legacyapp.R;
+import com.legacyapp.Adapters.MyPagerAdapter;
+import com.legacyapp.R;
 
 public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
 

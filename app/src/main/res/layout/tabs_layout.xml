@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+   <!--<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+
+    <android.support.v7.widget.Toolbar
+        android:visibility="gone"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_n"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Me"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_above="@+id/middlePanel"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+<ScrollView
+    android:id="@+id/middlePanel"
+    android:layout_above="@+id/tool"
+    android:layout_below="@+id/topPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/SampleForm"
+    android:gravity="center_horizontal"
+    android:text="Sample Form"
+    android:textSize="20dp"
+    android:layout_marginTop="20dp"
+    android:textColor="#181818"
+    android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/companyname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"
+        android:layout_below="@+id/SampleForm"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/borderrec"
+        android:textColor="#77787c"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/address1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Address Line1"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#77787c"
+        android:maxLines="3"
+        android:background="@drawable/borderrec"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/address2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Address Line2"
+        android:textColor="#77787c"
+        android:background="@drawable/borderrec"
+        android:padding="10dp"
+        android:maxLines="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone No"
+        android:background="@drawable/borderrec"
+        android:padding="10dp"
+        android:textColor="#77787c"
+        android:inputType="number"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/borderrec"
+        android:padding="10dp"
+        android:textColor="#77787c"
+        android:maxLines="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@drawable/borderrec"
+        android:padding="10dp"
+        android:textColor="#77787c"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/samples"
+        android:text="Request Samples"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/borderred"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+</ScrollView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:fillViewport="false"
+        app:tabIndicatorColor="@android:color/transparent"
+        android:layout_alignParentBottom="true" />
+       <!--<android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:background="?attr/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:fillViewport="false" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />-->
+</RelativeLayout>

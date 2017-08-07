@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/card_googlePlus"
+        android:clickable="true"
+        card_view:cardBackgroundColor="#E8E9E9"
+        card_view:cardCornerRadius="8dp"
+        android:addStatesFromChildren="true"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/BoxLayout"
+            android:padding="@dimen/card_margin_16"
+            android:addStatesFromChildren="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/text_320dp"
+                android:textColor="@color/text"
+                android:id="@+id/txt_login_with_googleplus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_margin_16"
+                android:text="Top Trending Models"
+                android:fontFamily="Arial"
+                android:layout_centerInParent="false"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_vieV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"/>
+
+    <!--<GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:background="#e5e5e5"
+        android:numColumns="auto_fit"
+        android:layout_marginTop="8dp"
+        android:columnWidth="140dp"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:stretchMode="columnWidth"/>-->
+</LinearLayout>

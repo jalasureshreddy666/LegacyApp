@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Legacy Converting</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="string_filler">Filler</string>
+    <string name="database_name">database_log</string>
+    <string name="action_person">Account</string>
+
+    <string name="permission.sms.disabled">please enable GPS permission in settings</string>
+    <string name="permission.sms.granted">GPS permission granted</string>
+    <string name="search">Search here</string>
+
+    <string name="address">"3 Security Dr.Suite 301\nCranbury,NJ 08512 \n 800.512.4190 \n legacybrands.com"</string>
+</resources>
